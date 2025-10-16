@@ -1,0 +1,6 @@
+LOG="../logs/system.log"
+echo "===== $(date) =====">> $LOG
+uptime >> $LOG
+free -h >> $LOG
+df -h >> $LOG
+

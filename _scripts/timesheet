@@ -1,0 +1,21 @@
+LOG=" ../logs/timesheet.log"
+
+echo "First Name:"
+read fname
+
+echo "Last Name:"
+read lname
+
+echo "Number of Hours Worked:"
+read hours
+
+echo "Description of Work"
+read description
+
+echo "===== $(date) =====" >> $LOG
+echo "Name: $fname $lname" >> $LOG
+echo "Hours Worked: $hours">> $LOG
+echo "Work Description: $description" >> $LOG
+
+cp $LOG ../data/timesheet.log
+
